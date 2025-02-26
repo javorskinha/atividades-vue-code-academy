@@ -2,6 +2,11 @@
 import VmodelData from './components/VmodelData.vue'
 import PropsPersonalizada from './components/PropsPersonalizada.vue'
 import CompContador from './components/CompContador.vue'
+import AlteraEstado from './components/AlteraEstado.vue'
+
+function recebeEvento(mensagem){
+  window.alert(mensagem)
+}
 </script>
 
 <template>
@@ -9,7 +14,9 @@ import CompContador from './components/CompContador.vue'
   <VmodelData/>
   <PropsPersonalizada nome="Rafael"/>
   <hr>
-  <CompContador v-if="valor==10"/>
+  <CompContador @notificacao="recebeEvento"/>
+  <hr>
+  <AlteraEstado/>
 </template>
 
 <style>
