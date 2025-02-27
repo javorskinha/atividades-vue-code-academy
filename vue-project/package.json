@@ -1,14 +1,16 @@
 {
-  "name": " ",
+  "name": "name",
   "version": "0.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "backend": "json-server --watch db/db.json"
   },
   "dependencies": {
+    "json-server": "^1.0.0-beta.3",
     "vue": "^3.5.13"
   },
   "devDependencies": {

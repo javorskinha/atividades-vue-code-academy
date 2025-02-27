@@ -2,7 +2,8 @@
 import VmodelData from './components/VmodelData.vue'
 import PropsPersonalizada from './components/PropsPersonalizada.vue'
 import CompContador from './components/CompContador.vue'
-import AlteraEstado from './components/AlteraEstado.vue'
+import MostraFotos from './components/MostraFotos.vue'
+import MudaFoto from './components/MudaFoto.vue'
 
 function recebeEvento(mensagem){
   window.alert(mensagem)
@@ -16,7 +17,9 @@ function recebeEvento(mensagem){
   <hr>
   <CompContador @notificacao="recebeEvento"/>
   <hr>
-  <AlteraEstado/>
+  <MostraFotos/>
+  <hr>
+  <MudaFoto />
 </template>
 
 <style>

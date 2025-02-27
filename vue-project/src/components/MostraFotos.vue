@@ -1,7 +1,7 @@
 <template>
     <div>
-        <ComponenteBotao v-if="exibeImagem" @click="mostrar(false)">{{texto}}</ComponenteBotao>
-        <ComponenteBotao v-else @click="mostrar(true)" :texto="Exibir"/>
+        <ComponenteBotao v-if="exibeImagem" @click="mostrar(false)" texto="Esconder" />
+        <ComponenteBotao v-else @click="mostrar(true)" texto="Exibir"/>
         <div v-if="exibeImagem">
             <img src="../../public/imgs/pirulito-azul.jpg" alt="" width="100px" height="75px">
             <img src="../../public/imgs/pirulito-rosa.jpg" alt=""

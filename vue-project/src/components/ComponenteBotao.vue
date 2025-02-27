@@ -2,7 +2,7 @@
     <button>{{ texto }}</button>
 </template>
 
-<script>
+<script setup>
 import { defineProps } from 'vue';
-    defineProps({texto: String})
+    const props = defineProps({texto: String})
 </script>
